@@ -12,10 +12,8 @@
         break;
         case "insertarregistro":
             $tab=$_POST["tabla"];
-            //print_r($tab);
+            
             $camvolor=$_POST["valores"];
-            //print_r($camvolor);
-            //exit;
             $uno->insertarasignacion($tab,$camvolor);
         break;
         case "consultar":
@@ -26,15 +24,11 @@
         break;
         case "formmodi":
             $id= $_POST["idcap"];
-            //print_r($id);
-            //exit;
             $uno->formmodi($id);
         break;
         case "actualizar":
             $tac=$_POST["tac"];
             $arreglo=$_POST["valores"];
-            //print_r($arreglo);
-            //exit;
             $ids=$_POST["id"];
             $uno->actualiza($tac,$arreglo,$ids);
         break;
