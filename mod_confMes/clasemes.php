@@ -3,11 +3,11 @@ class mes{
 
 
     public function conectarBd(){
-		$link=mysql_connect('localhost','root','xampp');
+		$link=mysql_connect('','','');
 		if($link==false){
 			echo "Error en la conexion a la base de datos";
 		}else{
-			mysql_select_db('2013_matriz_productiva');
+			mysql_select_db('');
 			return $link;
 		}
             
